@@ -423,8 +423,8 @@
     <!-- Enable SoftBank emoji encoding -->
     <string name="pref_title_enable_softbank_encoding">SoftBank emóció</string>
     <string name="pref_summary_enable_softbank_encoding">SoftBank emóció kodólás használata</string>
-
-
+    <string name="label_mms_push">Push üzenetek</string>
+    <string name="desc_mms_push">Push üzenetek fogadása a hálózatról</string>
 
 
 </resources>

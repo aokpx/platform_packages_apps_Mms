@@ -950,4 +950,8 @@
     <string name="pref_summary_mms_user_agent">Spoof phone as a different model for MMS</string>
     <string name="pref_mms_user_agent_custom_set">Custom User Agent set to:\n</string>
 
+    <!-- MMS push permission -->
+    <string name="label_mms_push">MMS Push</string>
+    <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
+
 </resources>

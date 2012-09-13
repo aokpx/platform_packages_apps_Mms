@@ -410,4 +410,6 @@
     <string name="pref_title_mms_user_agent">Пользовательское клиентское приложение</string>
     <string name="pref_summary_mms_user_agent">Имитировать другую модель телефона для  MMS</string>
     <string name="pref_mms_user_agent_custom_set">Пользовательское клиентское приложение установлено:\n</string>
+    <string name="label_mms_push">Передача MMS</string>
+    <string name="desc_mms_push">Передавать MMS из исходящих в сеть</string>
 </resources>

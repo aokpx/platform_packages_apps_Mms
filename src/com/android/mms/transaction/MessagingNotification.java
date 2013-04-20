@@ -946,13 +946,13 @@ public class MessagingNotification {
         if (isNew) {
             SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
 
-            boolean vibrate = false;
+            boolean vibrate = true;
             if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE)) {
                 // The most recent change to the vibrate preference is to store a boolean
                 // value in NOTIFICATION_VIBRATE. If prefs contain that preference, use that
                 // first.
                 vibrate = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE,
-                        false);
+                        true);
             } else if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN)) {
                 // This is to support the pre-JellyBean MR1.1 version of vibrate preferences
                 // when vibrate was a tri-state setting. As soon as the user opens the Messaging

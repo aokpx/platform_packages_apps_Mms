@@ -192,12 +192,29 @@
             android:summary="@string/pref_summary_pref_key_emojis_quick"
             android:dependency="pref_key_enable_emojis"
             android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="pref_key_enable_softbank_encoding"
+            android:title="@string/pref_title_enable_softbank_encoding"
+            android:summary="@string/pref_summary_enable_softbank_encoding"
+            android:dependency="pref_key_enable_emojis"
+            android:defaultValue="false" />
     </PreferenceCategory>
+
     <PreferenceCategory android:title="@string/pref_extra_settings">
-    <CheckBoxPreference android:key="pref_key_strip_unicode"
-        android:title="@string/pref_title_strip_unicode"
-        android:summary="@string/pref_summary_strip_unicode"
-        android:defaultValue="false" />
+        <CheckBoxPreference android:key="pref_key_strip_unicode"
+            android:title="@string/pref_title_strip_unicode"
+            android:summary="@string/pref_summary_strip_unicode"
+            android:defaultValue="false" />
+
+        <com.android.mms.preferences.UserAgentListPreference
+            android:key="pref_key_mms_user_agent"
+            android:defaultValue="default"
+            android:title="@string/pref_title_mms_user_agent"
+            android:summary="@string/pref_summary_mms_user_agent"
+            android:entries="@array/pref_mms_user_agent_entries"
+            android:entryValues="@array/pref_mms_user_agent_values"
+            android:dialogTitle="@string/pref_title_mms_user_agent" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/pref_soft_keyboard_title">
